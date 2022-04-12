@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%); /*p font in first div */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card{
+    width: 400px;
+}
+
+.community{
+    background: white;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.community h1{
+    font-size: 1.6rem;
+    color:var(--cyan);
+    margin-bottom: 2rem;
+}
+
+.community h2{
+    color: var(--bright-yellow);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.community p{
+    color: var(--grayish-blue);
+    line-height: 2rem;
+}
+
+.sub-info{
+    background-color: var(--cyan);
+    color: white;
+    padding: 25px;
+}
+
+.sub-info h1{
+    margin-bottom: 1.25rem;
+    font-size: 1.4rem;
+}
+
+.sub-info p{
+    color: var(--light-gray);
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.sub-info span{
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.sub-info button{
+    margin-top: 2rem;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bright-yellow);
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 8px 33px -1px rgba(0,0,0,0.29); 
+    box-shadow: 0px 8px 33px -1px rgba(0,0,0,0.29);
+}
+
+.why-us{
+    background-color: #4abebd;
+    padding: 25px;
+    list-style: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.why-us h1{
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.why-us li{
+    color: var(--light-gray);
+    list-style-type: none;
+    font-size: .95rem; 
+    line-height: 1.5em;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 1440px) {
+
+    .card{
+        width: 650px;
+    }
+    .container{
+        display: flex;
+    }
+
+    .sub-info{
+        width: 50%;
+        border-bottom-left-radius: 5px;
+    }
+
+    .why-us{
+        width: 50%;
+        border-bottom-left-radius: 0px;
+    }
+
+    .sub-info button{
+        cursor: pointer;
+        transition: 0.3s, 0.3s;
+    }
+
+    .sub-info button:hover{
+        color: var(--bright-yellow);
+        background-color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop: 1440px */
